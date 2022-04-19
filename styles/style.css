@@ -156,7 +156,7 @@ h3{
 }
 
 .title2 {
-  animation: anima2 1850ms ease-in-out ;
+  animation: anima2 1850ms ease-in-out infinite ;
   animation-direction: alternate-reverse;
   line-height: 4px;
   z-index: -1;
