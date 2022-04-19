@@ -140,14 +140,14 @@ main:after{
   border-radius: 20px;
   border: 1px solid #5627c2;
   content: "";
-  background: url(site_portifolio/components/images/3d-render-wall-glossy-purple-extruding-hexagon-shapes.jpg);
+  background: url(/site_portifolio/components/images/3d-render-wall-glossy-purple-extruding-hexagon-shapes.jpg);
   opacity: 0.4;
   top: 220px;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;   
+  z-index: -10;   
 }
 
 h3{
@@ -156,7 +156,7 @@ h3{
 }
 
 .title2 {
-  animation: anima2 1850ms ease-in-out infinite ;
+  animation: anima2 1850ms ease-in-out infinite;
   animation-direction: alternate-reverse;
   line-height: 4px;
   z-index: -1;
