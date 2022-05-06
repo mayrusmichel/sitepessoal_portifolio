@@ -1,0 +1,63 @@
+/*FloatButton*/
+.floatbutton{
+  
+  cursor: pointer;
+  padding: 0.6rem;
+  border-radius: 2rem 2rem 0 0;
+  width: 7rem;
+	height: 48rem;
+  color: rgb(255, 255, 255);
+  background-color: rgba(7, 7, 7, 0.6);
+  position: fixed;
+  z-index: 10;
+  right: 1rem;
+  bottom: -40rem;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.items div{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+
+.items div p {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.items div img{
+  width: 5rem;
+  height: 50px;
+  border-radius: 60%;
+  -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.items div img:hover {
+  -moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+  box-shadow: var(--verde) .1rem .2rem .8rem;
+}
+
+#float .item01{
+  border-radius: .1rem;
+  box-shadow: none;
+  transform: scale(1)
+}
+
+.f-anima {
+  animation: anima3 1200ms ease-in-out infinite;
+  animation-direction: alternate-reverse;
+}
+
+.float-expand{
+  -webkit-transition: 0.8s ease-in-out;
+  bottom: -1rem;
+}

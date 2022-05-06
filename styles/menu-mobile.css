@@ -1,0 +1,36 @@
+
+
+
+menu ul li{
+  float: left;
+}
+
+label{
+padding: 5px;
+color: white;
+text-align: center;
+cursor: pointer;
+width: 50px;
+height: 50px;
+
+}
+
+@media screen and (max-width: 760px) {
+header{
+ 
+}
+
+nav div img {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+}.logo{
+  display: flex;
+  height: 100px;;
+}
+
+
+ 

@@ -1,0 +1,107 @@
+/*reset*/
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: 0;
+	box-sizing: border-box;
+}
+
+
+/*variaiveis cores*/
+
+html{
+	--branco: rgb(255, 255, 255);
+	--verde: rgb(195, 221, 2);
+	--rosa: rgb(255, 68, 162);
+	--roxo-escuro: rgb(36, 8, 99);
+	--roxo-medio: rgb(115, 69, 223);
+	--roxo-claro: rgb(152, 113, 241);
+	--preto: rgba(39, 39, 39, 0.966);
+	--preto-2: rgba(56, 56, 56, 0.966);
+	--linear-claro: rgba(99,36,241,1);
+	--linear-escuro: rgba(28,4,82,1);
+
+	/* 16px (user agent) ---- trocado padrão = 10px*/
+	font-size: 62.5%;
+}
+
+/*configurações base*/
+body{
+	color: var(--branco);
+	height: 100vh; 
+	
+}
+
+body, button, input, text-area{
+	font-size: clamp(14px, 1.6rem, 2vw);
+}
+
+.content{
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*animações*/
+
+@keyframes anima {
+  to {
+      opacity: 0.35;
+  }
+}
+
+@keyframes anima2 {
+  to {
+      opacity: 0.25;
+  }
+}
+
+@keyframes anima3 {
+  to {
+      opacity: 0.2;
+  }
+}
+
+
+
+
+/*utilitarias*/
+.container{
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.f-row-a{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.f-row-b{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.rbt-mono-200{
+  font-family: roboto mono, sans-serif;
+  font-weight: 200;
+}
+
+.rbt-mono-500{
+  font-family: roboto mono, sans-serif;
+  font-weight: 500;
+}
+
+.rbt-900{
+  font-family: roboto, sans-serif;
+  font-weight: 900;
+}
