@@ -92,6 +92,11 @@
 
 
 /*menu mobile*/
+    
+    /*disable menu mobile*/
+header{
+  display: none;
+} 
 
 .menu{
   
