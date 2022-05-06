@@ -2,133 +2,203 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-08">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Mayrus Michel</title>
-  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+
+  <link rel="stylesheet" type="text/css" href="styles/global.css">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <link rel="stylesheet" type="text/css" href="styles/media.css">
+  <link rel="stylesheet" type="text/css" href="styles/float.css">
+  <link rel="stylesheet" type="text/css" href="styles/menu-mobile.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,500;1,200;1,500&family=Roboto:wght@500&display=swap" rel="stylesheet">
 
 </head>
 
-<body>
-  <header>
-    <div>
-      <nav class="container flex-row-b">
+<body onscroll="onScroll()">
+  <div id="home" class="content" >
+    <header id="navigation" >
+      <input type="checkbox" id="bt_menu">
+      <label for="bt_menu" class="menu-icon">&#9776;</label>
+      
+      
+      <nav class="menu container f-row-b" >
+          <div class="logo">
+            <img  src="components/images/html 5.png" alt="logo principal">
+          </div>
+          <ul class="rbt-900">
+            <a href="">
+              <li> Início</li>
+            </a>
+            <a href="">
+              <li> Serviços</li>
+            </a>
+            <a href="">
+              <li> Portifólio</li>
+            </a>
+            <a href="">
+              <li> Sobre mim</li>
+            </a>
+          
+          </ul>
+        </nav>
+      
+
+    </header>
+    
+    <main>
+      <div class="banner-1">
+        <div class="container f-row-b">
+          <aside class="top f-column">
+            <h1 class="title4 rbt-mono-200">Mayrus Michel</h1>
+            <h2 class="title2 rbt-900">Full Stack</h2>
+            <h2 class="title3 rbt-900">Designer</h2>
+            <h3 class="rbt-mono-200">Identidade Visual | UX/UI Design | Front-end Web</h3>
+            <a class="btn2 rbt-900" href="#">conheça</a>
+          </aside>
+
+          <article class="top">
+            <img class="img-head" src="components/images/developer.svg" alt="Página em Construção">
+          </article>
+        </div>
+        <img class="top arrow-down" src="components/images/arrow-down.svg" alt="Seta para baixo">
+      </div>
+
+      <section class="tech">
         <div>
-          <h1 class="title1 roboto-mono-200">
-            Mayrus Michel
-          </h1>
-        </div>
-
-        <ul>
-          <a class="roboto-900" href="">
-            <li> Início</li>
-          </a>
-          <a class="roboto-900" href="">
-            <li> Sobre mim</li>
-          </a>
-          <a class="roboto-900" href="">
-            <li> Serviços</li>
-          </a>
-          <a class="roboto-900" href="">
-            <li> Portifólio</li>
-          </a>
-          <a class="btn roboto-900" href="">
-            <li> Contato</li>
-          </a>
-        </ul>
-      </nav>
-    </div>
-
-  </header>
-  <main>
-    <div class="container flex-row-b">
-      <aside class="flex-column">
-        <h3 class="title4 roboto-mono-200">Mayrus Michel</h3>
-        <h2 class="title2 roboto-900">Full Stack</h2>
-        <h2 class="title3 roboto-900">Designer</h2>
-        <p class="sub-tit roboto-mono-200">Identidade Visual | UX/UI Design | Front-end Web</p>
-        <a class="btn2 roboto-900" href="#">conheça</a>
-
-      </aside>
-
-      <article>
-        <img class="img-head" src="components/images/developer.svg" alt="Página em Construção">
-      </article>
-    </div>
-    <img class="arrow-down" src="components/images/arrow-down.svg" alt="Seta para baixo">
-
-  </main>
-
-  <section class="tech">
-    <div class="container">
-      <h3 class="tech-title roboto-900">
-        Serviços
-      </h3>
-      <p class="tech-sub roboto-mono-200">
-        Conheça as habilidades, ferramentas e tecnologias utilizadas para trazer vida ao seu produto:
-      </p>
-      <div class="hab flex-column roboto-900">
-
-        <div class="hab2 flex-row-a">
-          <div class="hab-item border-1">
-            <img class="icone-servicos" src="components/images/arrow-down.svg" alt="">
-            <h3 class="title-cor-1">Identidade Visual</h3>
-            <p class="hab-sub-item roboto-mono-200">
-              Construo uma marca única, muito além da criação de um logotipo, conectando-se com seu cliente através de uma identidade própria para o seu negócio.
-              <br> Uma marca para o seu cliente se identificar e confiar.
+          <div class="section-title container">
+            <h3 class="rbt-900" style="">
+              Serviços
+            </h3>
+            <p class="rbt-mono-200">
+              Conheça as habilidades, ferramentas e tecnologias utilizadas para trazer vida ao seu produto:
             </p>
           </div>
+          <div class="habilidades container flex-column rbt-900">
+            <div class="f-row-a">
+              <div class="border-1">
+                <img src="/site_portifolio/components/images/arrow-down.svg" alt="">
+                <h3 class="title-cor-1">Identidade Visual</h3>
+                <p class="rbt-mono-200">
+                  Construo uma marca única, muito além da criação de um logotipo, conectando-se com seu cliente através de uma identidade própria para o seu negócio.
+                  <br> Uma marca para o seu cliente se identificar e confiar.
+                </p>
+              </div>
 
-          <div class="hab-item border-2">
-            <img class="icone-servicos" src="components/images/arrow-down.svg" alt="">
-            <h3 class="title-cor-2">UX/UI Design</h3>
-            <p class="hab-sub-item roboto-mono-200">
+              <div class="border-2">
+                <img src="/site_portifolio/components/images/arrow-down.svg" alt="">
+                <h3 class="title-cor-2">UX/UI Design</h3>
+                <p class="rbt-mono-200">
 
-              Realizo estudos sobre a experiência do usuário para criar designs interfaces e protótipos de alta fidelidade. <br> Projeto produtos acessíveis e utilizáveis ​​que auxiliam no crescimento do negócio.
+                  Realizo estudos sobre a experiência do usuário para criar designs interfaces e protótipos de alta fidelidade. <br> Projeto produtos acessíveis e utilizáveis ​​que auxiliam no crescimento do negócio.
 
-            </p>
-          </div>
-          <div class="hab-item border-3">
-            <img class="icone-servicos" src="components/images/arrow-down.svg" alt="">
-            <h3 class="title-cor-3">Front-end Web</h3>
-            <p class="hab-sub-item roboto-mono-200">
-              Utilizo diversas tecnologias da web para desenvolver sites atraentes que convertem visitantes em clientes. <br> Desenvolvo layouts de sites criativos e responsivos.
-            </p>
+                </p>
+              </div>
+              <div class="border-3">
+                <img src="/site_portifolio/components/images/arrow-down.svg" alt="">
+                <h3 class="title-cor-3">Front-end Web</h3>
+                <p class="rbt-mono-200">
+                  Utilizo diversas tecnologias da web para desenvolver sites atraentes que convertem visitantes em clientes. <br> Desenvolvo layouts de sites criativos e responsivos.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="tech-icones">
-      <div class="container  flex-row-a">
-        <img class=" tech-icon" src="components/images/html 5.png" alt="">
-        <img class=" tech-icon" src="components/images/html 5.png" alt="">
-        <img class=" tech-icon" src="components/images/html 5.png" alt="">
-        <img class=" tech-icon" src="components/images/html 5.png" alt="">
-        <img class=" tech-icon" src="components/images/html 5.png" alt="">
-        <img class=" tech-icon" src="components/images/html 5.png" alt="">
-        <img class=" tech-icon" src="components/images/html 5.png" alt="">
-        <img class=" tech-icon" src="components/images/html 5.png" alt="">
-        <img class=" tech-icon" src="components/images/html 5.png" alt="">
-        <img class=" tech-icon" src="components/images/html 5.png" alt="">
-        <img class=" tech-icon" src="components/images/html 5.png" alt="">
-        <img class=" tech-icon" src="components/images/html 5.png" alt="">
-        <img class=" tech-icon" src="components/images/html 5.png" alt="">
-      </div>
+        <div class="tech-icones">
+          <div class="container f-row-a">
+            <img src="components/images/html 5.png" alt="">
+            <img src="components/images/html 5.png" alt="">
+            <img src="components/images/html 5.png" alt="">
+            <img src="components/images/html 5.png" alt="">
+            <img src="components/images/html 5.png" alt="">
+            <img src="components/images/html 5.png" alt="">
+            <img src="components/images/html 5.png" alt="">
+            <img src="components/images/html 5.png" alt="">
+            <img src="components/images/html 5.png" alt="">
+            <img src="components/images/html 5.png" alt="">
+            <img src="components/images/html 5.png" alt="">
+            <img src="components/images/html 5.png" alt="">
+            <img src="components/images/html 5.png" alt="">
+          </div>
+        </div>
+      </section>
 
+      <section class="portifolio">
+        <div class="container">
+          <div class="gap-20 f-row-a">
+            <div class="portifolio-item">
+              <img src="" alt="">
+              <p>teste</p>
+            </div>
+            <div class="portifolio-item">
+              <img src="" alt="">
+              <p>teste</p>
+            </div>
+            <div class="portifolio-item">
+              <img src="" alt="">
+              <p>teste</p>
+            </div>
+          </div>
+      </section>
 
-    </div>
+      <!--Float Button-->
+      <button onclick="floatExpanded()" class="items f-column float-anima floatbutton" id="float">
+        <div >
+            <img class="item01" src="./components/images/chat.png" alt="Ícone opções Chat">
+        </div>
 
-  </section>
+        <a href="https://assistamais.net.br/" target="_blank">
+          <div>
+            <img src="./components/images/whatsapp.png" alt="Ícone link Whatsapp">
+        </div>
+        </a>
+        <a href="https://assistamais.net.br/" target="_blank">
+          <div>
+            <img src="./components/images/o-email.png" alt="Ícone link E-mail">
+        </div>
+        </a>
+        <a href="https://assistamais.net.br/" target="_blank">
+          <div>
+            <img src="./components/images/linkedin (1).png" alt="Ícone link Linkedin">
+        </div>
+        </a>
+        <a href="https://assistamais.net.br/" target="_blank">
+          <div>
+            <img src="./components/images/codepen.png" alt="Ícone link Codepen">
+        </div>
+        </a>
+        <a href="https://github.com/mayrusmichel" target="_blank">
+          <div>
+            <img src="./components/images/github.png" alt="Ícone link Github">
+        </div>
+        </a>
+        
+      
 
-  <section class="about">
-    proxima
-  </section>
+      <div class="social-icons" ></div>
+      
+    </main>
 
+  </div>
 
+  
+
+  <!-- scripts-->
+  <script type="text/javascript" src="main.js"></script>
+ 
   <!-- <a class="ref" href="https://storyset.com/work">Work illustrations by Storyset</a> -->
 </body>
+
+
+<footer style="background-color: #202020; padding:20px; text-align: center;">
+  <p> @ Design por Mayrus Michel</p>
+</footer>
 
 </html>
