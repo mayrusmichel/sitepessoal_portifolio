@@ -20,3 +20,7 @@ function floatExpanded() {
     }
 }
 
+//ELEMENT HORIZONTAL SCROLL
+function scrollHorizontally() {
+    
+}
